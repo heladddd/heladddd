@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #4bacc6;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            height: 100px;
+            border-style: outset;
+        }
+
+        #logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin-right: 10px;
+        }
+        #logo img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+        }
+        ul {
+            float: right;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        li {
+            margin-right: 10px;
+        }
+
+        a {
+            align-items: center;
+            justify-content: center;
+            background-color: #f5f5f5;
+            text-decoration: none;
+            color: red;
+            font-weight: bold;
+            padding: 8px 12px;
+            border: 2px solid blue; /* Border color and width */
+            border-radius: 5px; /* Border radius for rounded corners */
+        }
+
+        hr {
+            border-top: 2px solid #fff;
+            width: 100%;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div id="logo"><img src="images/download.jpg" alt=""></div>
+        <ul>
+            <li><a href="#" onclick="showWelcomeDialog()">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <hr>
+    </nav>
+    <script>
+        function showWelcomeDialog() {
+            alert("Welcome Home");
+        }
+    </script>
+</body>
+</html>
